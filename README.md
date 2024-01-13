@@ -4,12 +4,10 @@ Spotify Clone App is a web application built using the MERN (MongoDB, Express.js
 
 Check out the live demo of the Spotify Clone App at:  [Spotify Clone Live Demo](https://spotifyclone-abhishekkrao.vercel.app/)
 
-https://github.com/AbhishekkRao/SpotifyClone/assets/77543486/25d5cb27-6617-4dac-8854-e0123598097b
-
 ## Installation
 
 1. Clone the repository:
-```git clone https://github.com/AbhishekkRao/SpotifyClone.git```
+```git clone https://github.com/atulsaini04/SpotifyClone```
 
 2. Navigate to the backend folder:
 ```cd SpotifyClone/backend```
