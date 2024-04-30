@@ -17,8 +17,7 @@ app.use(express.json());
 
 mongoose
     .connect(
-        "mongodb+srv://abhishek:" + process.env.MONGO_PASSWORD + "@cluster0.dyydgxw.mongodb.net/?retryWrites=true&w=majority",
-        {
+        "mongodb+srv://atuls:" + process.env.MONGO_PASSWORD + "@cluster0.dyydgxw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         }
@@ -34,8 +33,8 @@ let opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = "thisKeyIsSupposedToBeSecret";
 passport.use(
-    new JwtStrategy(opts, function (jwt_payload, done) {
-        User.findOne({ _id: jwt_payload.identifier }, function (err, user) {
+    new JwtStrategy(opts, function(jwt_payload, done) {
+        User.findOne({ _id: jwt_payload.identifier }, function(err, user) {
             // done(error, doesTheUserExist)
             if (err) {
                 return done(err, false);
